@@ -1,51 +1,48 @@
 config-version: 1
 messages:
   generic:
-    prefix: <aqua><bold>ServerUtils <dark_gray><bold>ﾂｻ<reset> <gray>
-    error: <red>An error occurred, please check the console!
-    not-exists: <red>Plugin <dark_red><plugin></dark_red> does not exist!
-    not-enabled: <red>Plugin <dark_red><plugin></dark_red> is not enabled!
-    already-loaded: <red>Plugin <dark_red><plugin></dark_red> is already loaded!
-    already-enabled: <red>Plugin <dark_red><plugin></dark_red> is already enabled!
-    already-disabled: <red>Plugin <dark_red><plugin></dark_red> is already disabled!
-    invalid-plugin: <red>Plugin <dark_red><plugin></dark_red> is invalid!
-    invalid-description: <red>Plugin <dark_red><plugin></dark_red> has an invalid
-      plugin description!
-    unknown-dependency: '<red>Plugin <dark_red><plugin></dark_red> has an unknown
-      dependency: <dark_red><dependency><red>!'
-    file-deleted: <red>File of plugin <dark_red><plugin></dark_red> has been deleted!
-    protected-plugin: <red>Plugin <dark_red><plugin></dark_red> is protected!
-  reload: <dark_aqua>Successfully reloaded <aqua>ServerUtils configurations</aqua>!
+    prefix: <aqua><bold>ServerUtils <dark_gray><bold>»<reset> <gray>
+    error: <red>エラーが発生しました。コンソールを確認してください!
+    not-exists: <red>プラグイン <dark_red><plugin></dark_red> は存在しません!
+    not-enabled: <red>プラグイン <dark_red><plugin></dark_red> は有効化されていません!
+    already-loaded: <red>プラグイン <dark_red><plugin></dark_red> はすでにロードされています!
+    already-enabled: <red>プラグイン <dark_red><plugin></dark_red> はすでに有効化されています!
+    already-disabled: <red>プラグイン <dark_red><plugin></dark_red> はすでに無効化されています!
+    invalid-plugin: <red>プラグイン <dark_red><plugin></dark_red> は無効です!
+    invalid-description: <red>プラグイン <dark_red><plugin></dark_red> の plugin.yml は有効ではありません!
+    unknown-dependency: '<red>プラグイン <dark_red><plugin></dark_red> は不明なプラグインに依存しています:
+      <dark_red><dependency><red>!'
+    file-deleted: <red>プラグインのファイル <dark_red><plugin></dark_red> は削除されました!
+    protected-plugin: <red>プラグイン <dark_red><plugin></dark_red> は保護されています!
+  reload: <dark_aqua><aqua>ServerUtils の設定ファイル</aqua> を再読み込みしました!
   serverutils-updater: <dark_aqua>Loaded and enabled ServerUtilsUpdater. Completion
     can be monitored from the console, attempting restart now...
-  loadplugin: <dark_aqua>Successfully loaded <aqua><plugin></aqua>!
-  unloadplugin: <dark_aqua>Successfully unloaded <aqua><plugin></aqua>!
+  loadplugin: <dark_aqua><aqua><plugin></aqua> をロードしました!
+  unloadplugin: <dark_aqua><aqua><plugin></aqua> をアンロードしました!
   reloadplugin:
-    success: <dark_aqua>Successfully reloaded <aqua><plugin></aqua>!
+    success: <dark_aqua><aqua><plugin></aqua> を再読み込みしました!
     serverutils: <red>Sorry, but you can't reload ServerUtils this way. Please restart
       using <dark_red>/<command></dark_red>.
   depending-plugins:
-    prefix: '<red>Plugin <dark_red><plugin></dark_red> has depending plugins: '
+    prefix: '<red>プラグイン <dark_red><plugin></dark_red> は次のプラグインに依存しています: '
     format: <dark_red><plugin>
     separator: '<red>, '
-    last-separator: ' <red>and '
-    override: <red>Use "<dark_red>/<command></dark_red>" to force command execution.
+    last-separator: '<aqua>, '
+    override: <red>"<dark_red>/<command></dark_red>" を使用し、強制的にコマンドを実行します
   watchplugin:
-    start: <dark_aqua>Started watching <aqua><plugin></aqua>!
-    change: <dark_aqua>Changes detected, reloading plugins now...
-    stopped: <dark_aqua>Stopped watching <aqua><plugin></aqua>!
-    file-deleted: <red>File of plugin <dark_red><plugin></dark_red> has been deleted!
-      Waiting for plugin to show up...
-    deleted-file-is-created: <dark_aqua>File of plugin <aqua><plugin></aqua> has shown
-      up again!
-    already-watching: <red>You are already watching <dark_red><plugin></dark_red>!
-    not-watching: <red>You are not watching <dark_red><plugin></dark_red>!
+    start: <dark_aqua><aqua><plugin></aqua> の監視を開始しました!
+    change: <dark_aqua>変更を検出しました。再読み込みしています...
+    stopped: <dark_aqua><aqua><plugin></aqua> の監視を停止しました!
+    file-deleted: <red><dark_red><plugin></dark_red> のファイルが削除されました! 再び追加されるのを待っています...
+    deleted-file-is-created: <dark_aqua>削除された <aqua><plugin></aqua> のファイルが追加されました!
+    already-watching: <red><dark_red><plugin></dark_red> はすでに監視しています!
+    not-watching: <red><dark_red><plugin></dark_red> は監視していません!
   update:
     available: |-
-      <dark_gray><strikethrough>------------=<reset><dark_gray>[ <aqua><bold>ServerUtils Update<reset> <dark_gray>]<strikethrough>=--------------
-       <dark_aqua>Current version: <aqua><old>
-       <dark_aqua>New version: <aqua><new>
-       <dark_aqua>Release info: <aqua><info>
+      <dark_gray><strikethrough>------------=<reset><dark_gray>[ <aqua><bold>ServerUtils 更新<reset> <dark_gray>]<strikethrough>=--------------
+       <dark_aqua>現在のバージョン: <aqua><old>
+       <dark_aqua>新しいバージョン: <aqua><new>
+       <dark_aqua>リリース情報: <aqua><info>
       <dark_gray><strikethrough>-------------------------------------------------
     downloading: |-
       <dark_gray><strikethrough>------------=<reset><dark_gray>[ <aqua><bold>ServerUtils Update<reset> <dark_gray>]<strikethrough>=--------------
@@ -65,21 +62,21 @@ messages:
     footer: <dark_gray><strikethrough>-------------------------------------------------
   plugins:
     header: <dark_gray><strikethrough>------------=<reset><dark_gray>[ <aqua><bold>ServerUtils
-      Plugins<reset> <dark_gray>]<strikethrough>=-------------
-    prefix: ' <dark_aqua>Plugins <dark_gray>(<green><count><dark_gray>)<aqua>: '
+      プラグイン一覧<reset> <dark_gray>]<strikethrough>=-------------
+    prefix: ' <dark_aqua>プラグイン <dark_gray>(<green><count><dark_gray>)<aqua>: '
     format: <dark_aqua><plugin>
     format-disabled: <red><plugin>
     separator: '<aqua>, '
-    last-separator: ' <aqua>and '
+    last-separator: '<aqua>, '
     version: ' <dark_gray>(<green><version><dark_gray>)'
     footer: <dark_gray><strikethrough>-------------------------------------------------
   plugininfo:
     header: <dark_gray><strikethrough>-----------=<reset><dark_gray>[ <aqua><bold>ServerUtils
-      PluginInfo<reset> <dark_gray>]<strikethrough>=-----------
+      プラグイン情報<reset> <dark_gray>]<strikethrough>=-----------
     format: ' <dark_aqua><key><dark_gray>: <aqua><value>'
     list-format: <aqua><value>
     list-separator: '<dark_gray>, '
-    list-last-separator: ' <dark_gray>and '
+    list-last-separator: ' <dark_gray>, '
     footer: <dark_gray><strikethrough>-------------------------------------------------
   commandinfo:
     header: <dark_gray><strikethrough>-----------=<reset><dark_gray>[ <aqua><bold>ServerUtils
@@ -87,15 +84,6 @@ messages:
     format: ' <dark_aqua><key><dark_gray>: <aqua><value>'
     list-format: <aqua><value>
     list-separator: '<dark_gray>, '
-    list-last-separator: ' <dark_gray>and '
+    list-last-separator: ' <dark_gray>, '
     footer: <dark_gray><strikethrough>-------------------------------------------------
-    not-exists: <red>That command is not a valid registered command.
-  reloadconfig:
-    success: <dark_aqua>Successfully reloaded <aqua><config></aqua>!
-    warnings: <red>There were warnings while reloading <dark_red><config></dark_red>,
-      please check the console!
-    not-exists: <red>Config <dark_red><config></dark_red> does not exist.
-    not-supported: <red>Config <dark_red><config></dark_red> is not supported on your
-      Minecraft version.
-  disableplugin: <dark_aqua>Successfully disabled <aqua><plugin></aqua>!
-  enableplugin: <dark_aqua>Successfully enabled <aqua><plugin></aqua>!
+    not-exists: <red>そのコマンドは登録されていません
